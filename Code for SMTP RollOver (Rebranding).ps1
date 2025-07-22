@@ -2,8 +2,8 @@
 Import-Module ActiveDirectory
 
 # Define the path to the CSV file and the log file
-$CSVFilePath = "C:\Users\ext.goutham.gummadi\OneDrive - EDHC\Infrastructure\Rebranding\Users SMTP change\SMTP Rebranding.csv"
-$LogFile = "C:\Users\ext.goutham.gummadi\OneDrive - EDHC\Infrastructure\Rebranding\Users SMTP change\RollOverLogFile.csv"
+$CSVFilePath = ""
+$LogFile = ""
 
 
 # Import the CSV data
