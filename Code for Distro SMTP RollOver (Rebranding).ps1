@@ -1,6 +1,6 @@
 ﻿# Define the path to the CSV file and the log file
-$CSVFilePath = "C:\Users\ext.goutham.gummadi\OneDrive - EDHC\Infrastructure\Rebranding\Distro, 365 SMTP change\AllDistributionLists09-09-2024_10-54.csv"
-$LogFile = "C:\Users\ext.goutham.gummadi\OneDrive - EDHC\Infrastructure\Rebranding\Distro, 365 SMTP change\AllDistributionLists09-09-2024_10-54RollOverLogFile.csv"
+$CSVFilePath = ""
+$LogFile = ""
 #Importing CSV file
 $DistroData= Import-Csv -Path $CSVFilePath 
 #Creating a file to track if the changes are successful or not
@@ -13,7 +13,8 @@ Foreach($Distro in $DistroData)
     $DistributionInfo= Get-DistributionGroup -Identity $EmailAddress
     if($DistributionInfo)
         {
-         $NewPrimarySMTP= $EmailAddress.replace("edhc","lanterncare")
+         $NewPrimarySMTP= $EmailAddress.replace("")
+         
 #Actual code     
         Set-DistributionGroup -Identity $EmailAddress -PrimarySmtpAddress $OldPrimarySMTP
 
