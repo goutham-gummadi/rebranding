@@ -1,7 +1,7 @@
 ﻿Connect-ExchangeOnline
 $CurrentDateTime= Get-Date -Format "MM-dd-yyyy_HH-mm"
-$MS365Groups= "C:\Users\ext.goutham.gummadi\OneDrive - EDHC\Desktop\MS365Groups$CurrentDateTime.csv"
-$DLList= "C:\Users\ext.goutham.gummadi\OneDrive - EDHC\Desktop\AllDistributionLists$CurrentDateTime.csv"
+$MS365Groups= ""
+$DLList= ""
 $MS365GroupsData=@()
 $DistroData=@()
 $AllMS365Groups = Get-UnifiedGroup -Filter *
