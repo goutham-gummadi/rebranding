@@ -2,11 +2,11 @@
 Import-Module ActiveDirectory
 
 # Define the root OU
-$rootOU = "OU=People,DC=corp,DC=edhc,DC=com"
+$rootOU = ""
 $CurrentDate= Get-Date -Format "dd-MM-yyyy-HH-mm"
 
 # Define the CSV file path
-$csvFilePath = "C:\Users\ext.goutham.gummadi\OneDrive - EDHC\Infrastructure\Rebranding\Backups\CurrentActiveUsers$CurrentDate.csv"
+$csvFilePath = ""
 
 # Retrieve all user accounts from the specified OU and its sub-OUs
 $userAccounts = Get-ADUser -Filter * -SearchBase $rootOU -SearchScope Subtree -Property *
