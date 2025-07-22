@@ -1,7 +1,3 @@
-Here’s a focused `README.md` section specifically for the **Rebranding** scripts in your repository:
-
----
-
 ## 🔄 Rebranding Scripts
 
 This folder contains automation scripts designed to simplify and accelerate the process of **rebranding user accounts** across various systems. These scripts are particularly useful during company mergers, acquisitions, or organizational restructuring.
