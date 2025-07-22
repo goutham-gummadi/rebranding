@@ -2,8 +2,8 @@
 #Import-Module ActiveDirectory
 
 # Define the path to the CSV file and the log file
-$CSVFilePath = "C:\Users\ext.goutham.gummadi\OneDrive - EDHC\Infrastructure\Rebranding\Final list to change\EP Final users list for SMTP change.csv"
-$LogFile = "C:\Users\ext.goutham.gummadi\OneDrive - EDHC\Infrastructure\Rebranding\Final list to change\EP Final users Log File 09-17-2024-01-35.csv"
+$CSVFilePath = ""
+$LogFile = ""
 
 
 # Import the CSV data
@@ -37,8 +37,9 @@ foreach ($User in $UserData)
 	
         Write-Host "Current Proxy is : $CurrentProxyString"
         #Creating Primary SMTP using SAM
-        $PrimaryProxy= "SMTP:"+$SAM+"@lanterncare.com"
-        $DefaultProxy= "smtp:"+$SAM+"@edhc.com"
+        $PrimaryProxy= "SMTP:"+$SAM+""
+        $DefaultProxy= "smtp:"+$SAM+""
+	
         #If the current proxyAddresses contain new domain in primary or secondary
         if($CurrentProxy -eq $PrimaryProxy.ToLower())
             {
